@@ -1,28 +1,33 @@
 :host {
-    display: block;
+  display: block;
+  width: 100%;
 }
 
 .hero-details {
-    background-color: #3a3a3a;
-    border-radius: 2px;
-    padding: 20px;
-    font-size: 1.2rem;
-    color: #b3b9c5;
+  background-color: #3a3a3a;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #b3b9c5;
 }
 
 .hero-details h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .hero-details input {
-    background-color: #b3b9c5;
-    color: #202020;
-    padding: 3px 10px 5px;
-    border-radius: 2px;
-    border: 1px solid #3a3a3a;
-    font-size: 1.2rem;
+  background-color: #b3b9c5;
+  color: #202020;
+  padding: 3px 10px 5px;
+  border-radius: 2px;
+  border: 1px solid #3a3a3a;
+  font-size: 1.2rem;
 }
 
 .hero-details input:focus {
-    background-color: #fff;
+  background-color: #fff;
+}
+
+.form {
+  margin-bottom: 20px;
 }
