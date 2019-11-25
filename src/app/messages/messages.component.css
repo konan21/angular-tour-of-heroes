@@ -1,0 +1,39 @@
+:host {
+    width: 100%;
+    padding-top: 50px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+code {
+    display: block;
+    background-color: #3a3a3a;
+    border-radius: 4px;
+    padding: 20px;
+
+    font-family: Menlo, Roboto Mono, Courier New, monospace;
+    font-size: 14px;
+    color: #b3b9c5;
+    direction: ltr;
+    text-align: left;
+    white-space: pre-wrap;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 0 0 2rem;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+code span {
+    display: block;
+    font-family: inherit;
+}

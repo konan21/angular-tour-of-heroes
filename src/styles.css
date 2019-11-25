@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+
+h1, h2, h3 {
+    color: #cecece;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+h2, h3 {
+    font-weight: 700;
+    /*font-weight: lighter;*/
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+body {
+    margin: 2em;
+    background-color: #202020;
+}
+body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, sans-serif;
+}
+/* everywhere else */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button,
+[type="button"],
+[type="submit"],
+a.button,
+button {
+    display: inline-block;
+    background-color: #5183f5;
+    border-radius: 4px;
+    padding: .75rem 1.25rem;
+    border: 1px solid #5183f5;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.button:hover,
+[type="button"]:hover,
+[type="submit"]:hover,
+a.button:hover,
+button:hover {
+    background-color: #2161f2;
+    border-color: #2161f2;
+}
