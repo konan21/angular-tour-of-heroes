@@ -6,6 +6,7 @@
 }
 
 .hero {
+  position: relative;
   list-style: none;
   margin-left: 60px;
   margin-bottom: 20px;
@@ -36,8 +37,14 @@
   color: #b3b9c5;
 }
 
-.hero:hover a:link {
+.hero:hover a:link,
+.hero:hover a:visited {
   color: #fff;
+}
+
+.hero:hover button.delete {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*.hero.selected {*/
@@ -67,4 +74,25 @@
   flex-shrink: 0;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+}
+
+button.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #6e6e6e;
+  opacity: 0;
+  visibility: hidden;
+}
+
+button.delete:hover {
+  background-color: #ff4a4a;
+  border-color: #ff4a4a;
+  color: #fff;
 }
