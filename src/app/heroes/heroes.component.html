@@ -1,7 +1,18 @@
+<h2>Add new Hero</h2>
+
+<div>
+  <label>
+    <!--    <span class="text-light">Hero name:</span>-->
+    <input placeholder="Hero name" #heroName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(heroName.value); heroName.value=''">Add</button>
+</div>
+
 <h2>Heroes</h2>
 
 <ul class="heroes">
-    <li *ngFor="let hero of heroes" class="hero" (click)="onSelect(hero)">
+    <li *ngFor="let hero of heroes" class="hero">
         <a routerLink="/detail/{{hero.id}}">
           <span class="badge">{{hero.id}}</span>
           <span class="title">{{hero.name}}</span>
@@ -11,12 +22,3 @@
               (click)="delete(hero)">&#10006;</button>
     </li>
 </ul>
-
-<div>
-  <label>
-    <span class="text-light">Hero name:</span>
-    <input #heroName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">Add</button>
-</div>

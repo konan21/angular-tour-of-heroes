@@ -50,6 +50,11 @@ button {
     text-decoration: none;
 }
 
+button + button,
+.button + .button {
+  margin-left: 10px;
+}
+
 .button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
@@ -62,10 +67,10 @@ button:hover {
 input {
   background-color: #b3b9c5;
   color: #202020;
-  padding: 3px 10px 5px;
+  padding: 6px 10px;
   border-radius: 2px;
   border: 1px solid #3a3a3a;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 input:focus {
